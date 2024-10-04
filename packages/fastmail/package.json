@@ -1,0 +1,40 @@
+{
+  "name": "fastmail",
+  "version": "1.0.4",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "author": "Om Dahale",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omd01/fastmail"
+  },
+  "license": "MIT",
+  "description": "Send emails with pre-built templates in just plenty lines of code",
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format cjs,esm",
+    "clean": "rm -rf dist && rm -rf node_modules",
+    "lint": "tsc"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "devDependencies": {
+    "@types/nodemailer": "^6.4.16",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.15"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "keywords": [
+    "Nodemailer",
+    "quickmail",
+    "email",
+    "send email",
+    "email templates"
+  ]
+}
